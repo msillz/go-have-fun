@@ -2,6 +2,8 @@
 // encoded strings, beyond what is provided in the standard "strings" package.
 package morestrings
 
+import "fmt"
+
 // ReverseRunes returns its argument string reversed rune-wise left to right.
 func ReverseRunes(s string) string {
 	r := []rune(s)
@@ -9,4 +11,10 @@ func ReverseRunes(s string) string {
 		r[i], r[j] = r[j], r[i]
 	}
 	return string(r)
+}
+
+func Hello(name string) string {
+	// Return a greeting that embeds the name in a message.
+	message := fmt.Sprintf("Hi, %v. Welcome!", name)
+	return message
 }
