@@ -1,4 +1,4 @@
-module example.com/mod
+module github.com/msillz/go-have-fun
 
 go 1.22.3
 

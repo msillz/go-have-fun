@@ -4,7 +4,7 @@ CMD_DIR=./cmd/api-server
 
 # Default target: build the binary
 build:
-	go build -o $(BINARY_NAME) $(CMD_DIR)
+	go build -o ./bin/$(BINARY_NAME) $(CMD_DIR)
 
 # Run the application
 run:
